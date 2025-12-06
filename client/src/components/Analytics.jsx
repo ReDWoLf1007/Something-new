@@ -8,7 +8,7 @@ const Counter = ({ end, suffix = '' }) => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         let start = 0;
-        const duration = 2000;
+        const duration = 1000;
         const increment = end / (duration / 16);
         const timer = setInterval(() => {
           start += increment;
