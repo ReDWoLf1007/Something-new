@@ -11,7 +11,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 // lets tackle cors 
 
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "http://localhost:3000",
     methods:"GET, POST, PUT, DELETE, PATCH, HEAD, FETCH",
     credentials: true,
 };
@@ -31,6 +31,6 @@ const PORT = 5000;
 
 connectDb().then(() => {
     app.listen ( PORT, () =>{
-        console.log('server is running at port:', PORT);
+        console.log('server is running at port: ', PORT);
     });
 });
