@@ -20,15 +20,6 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 
-const __dirname = path.resolve();
-
-// Serve the dist folder (Vite build)
-app.use(express.static(path.join(__dirname, "dist")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist/index.html"));
-});
-
 // Mount the Router: To use the router in your mini express app, you can "mount" it at  a specific URL prefix
 
 app.use("/api/auth", authRoute);
