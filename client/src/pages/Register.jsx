@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 
 
-const URL = "http://localhost:5000/api/auth/register";
+const URL = `${import.meta.env.VITE_API_URL}/api/auth/register`;
 
 export const Register = () => {
 
