@@ -11,7 +11,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 // lets tackle cors 
 
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://something-new-client.vercel.app", "https://something-new-client-mcn6ghdlt-redwolf1007s-projects.vercel.app"],
+    origin: ["http://localhost:5173", "https://something-new-1-cnlp.onrender.com"],
     methods:"GET, POST, PUT, DELETE, PATCH, HEAD, FETCH",
     credentials: true,
 };
