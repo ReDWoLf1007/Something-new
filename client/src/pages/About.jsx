@@ -47,6 +47,8 @@ export const About = () => {
                 alt="coding buddies "
                 width="400"
                 height="500"
+                loading="eager"
+                fetchpriority="high"
               />
             </div>
           </div>

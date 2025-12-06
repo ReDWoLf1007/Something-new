@@ -29,7 +29,7 @@ export const Home = () => {
                     {/* hero images */}
 
                     <div className="hero-image">
-                      <img src="/images/home.png" alt="Books for Life" width={400} height={400} />
+                      <img src="/images/home.png" alt="Books for Life" width={400} height={400} loading="eager" fetchpriority="high" />
                     </div>
                 </div>
             </section>
@@ -45,7 +45,7 @@ export const Home = () => {
                   {/* hero images */}
 
                   <div className="hero-image">
-                      <img src="/images/design.png" alt="Books for Life" width={400} height={400} />
+                      <img src="/images/design.png" alt="Books for Life" width={400} height={400} loading="lazy" />
                     </div>
                     <div className="hero-content">
                       <p>We are the World Best Second Hand Books Website</p>

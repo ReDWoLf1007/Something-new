@@ -63,7 +63,7 @@ export const Login = () => {
           <div className="section-registration">
               <div className="container grid grid-two-cols">
                   <div className="registration-image">
-                      <img src="/images/login.png" alt="Login Here" width="400" height="400" />
+                      <img src="/images/login.png" alt="Login Here" width="400" height="400" loading="eager" fetchpriority="high" />
                   </div>
                   {/* let tackle registration form  */}
                   <div className="registration-form">
