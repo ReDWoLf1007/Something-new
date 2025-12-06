@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 
-const URL = "http://localhost:5000/api/auth/login";
+// const URL = "http://localhost:5000/api/auth/login";
+const URL = `${import.meta.env.VITE_API_URL}/api/auth/login`;
 
 export const Login = () => {
     const [user, setUser] = useState({
