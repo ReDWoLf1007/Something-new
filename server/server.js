@@ -11,7 +11,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 // lets tackle cors 
 
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://something-new-1-qohj.onrender.com"],
+    origin: ["http://localhost:5173", "https://something-new-1-12bm.onrender.com"],
     methods:"GET, POST, PUT, DELETE, PATCH, HEAD, FETCH",
     credentials: true,
 };
