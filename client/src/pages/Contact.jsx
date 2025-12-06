@@ -1,5 +1,7 @@
 import { useState } from "react";
 export const Contact = () => {
+
+    const URL = `${import.meta.env.VITE_API_URL}/api/auth/contact`;
     
     const [contact, setContact] = useState({
         username:"",
@@ -20,10 +22,25 @@ export const Contact = () => {
 
     // handle form getforSubmission 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        try {
+            const response = await fetch(URL, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(contact),
+            });
 
-        console.log(contact);
+            if (response.ok) {
+                setContact({ username: "", email: "", message: "" });
+                alert("Message sent successfully!");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
     }
 
     
