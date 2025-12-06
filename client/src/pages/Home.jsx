@@ -17,10 +17,10 @@ export const Home = () => {
                         tailored to meet your unique needs.
                        </p>
                        <div className="btn btn-group">
-                         <Link href="/connect">
+                         <Link to="/connect">
                            <button className="btn">Connect Now</button>
                          </Link>
-                         <Link href="/services">
+                         <Link to="/services">
                            <button className="btn secondary-btn ">Learn Now</button>
                          </Link>
                        </div>
@@ -57,10 +57,10 @@ export const Home = () => {
                         tailored to meet your unique needs.
                        </p>
                        <div className="btn btn-group">
-                         <Link href="/connect">
+                         <Link to="/connect">
                            <button className="btn">Connect Now</button>
                          </Link>
-                         <Link href="/services">
+                         <Link to="/services">
                            <button className="btn secondary-btn ">Learn Now</button>
                          </Link>
                        </div>

@@ -1,7 +1,7 @@
 footer {
     padding: 3.2rem;
     text-align: center;
-    background-color: var(--btn-color);
-    color: var(--bg-color);
+    background-color: var(--dark-color);
+    color: var(--text-primary);
     margin-top: auto;
 }
