@@ -1,7 +1,7 @@
 import { useState } from "react";
 export const Contact = () => {
 
-    const URL = `${import.meta.env.VITE_API_URL}/api/auth/contact`;
+    const URL = `${import.meta.env.VITE_API_URL}/api/form/contact`;
     
     const [contact, setContact] = useState({
         username:"",
