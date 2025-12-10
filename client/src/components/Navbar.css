@@ -1,8 +1,11 @@
-.container{
+.nav-container{
+    width: fit-content;
+    background: #3fb411;
     max-width: 140rem;
     padding: 4.2rem 2.4rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 ul{
