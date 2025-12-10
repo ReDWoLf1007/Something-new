@@ -4,6 +4,4 @@ footer {
     background-color: var(--dark-color);
     color: var(--text-primary);
     margin-top: auto;
-    position: fixed;
-    /* bottom: 0; */
 }
