@@ -17,8 +17,8 @@ const App = () => {
   return (
     <>
     <BrowserRouter>
+      <Navbar />
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-        <Navbar />
         <div style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element= {<Home />}  />
@@ -31,8 +31,8 @@ const App = () => {
             <Route path="*" element= {<Error />}  />
           </Routes>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </BrowserRouter>
     </>
   );

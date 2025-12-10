@@ -6,7 +6,7 @@ export const Navbar = () => {
     const { isLoggedIn } = useAuth();
     return <>
       <header>
-        <div className="nav-container">
+        <div className="container">
             <div className="logo-brand">
                 <a href="/">Tiwari Logical Analysis</a>
             </div> 
